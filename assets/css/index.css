@@ -4,10 +4,101 @@
 
 .main-display-section {
   display: flex;
-  background-color: #444654;
+  flex-direction: column;
+  background-color: #343541;
   height: 100%;
   width: 100%;
+  display: relative;
 }
+
+/* ~~~~~~~~~~~~~~~~~~ */
+/* MAIN DISPLAY HEADERS*/
+/* ~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~MOBILE~~~~~~~~~~~~~~ */
+.main-display-mobile-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-top: solid #5d5d67 0px;
+  border-bottom: solid #5d5d67 1px;
+  height: 43px;
+  font-size: 100%;
+  padding-top: 4px;
+  padding-left: 6px;
+}
+
+/* SVG elements in mobile header */
+.h-6 {
+  stroke: #d9d9e3;
+  width: 24px;
+  height: 24px;
+}
+
+#hamburger:hover svg {
+  stroke: #fff;
+}
+
+#hamburger:focus svg {
+  outline: 2px solid white;
+  border-radius: 1px;
+  outline-offset: 5px;
+}
+
+#mobile-header-new-chat {
+  color: #d9d9e3;
+  align-self: center;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  justify-self: center;
+  padding-top: 2px;
+}
+
+#mobile-header-new-chat-button {
+  width: 48px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~MAIN DISPLAY HEADER~~~~~~~ */
+
+.main-display-header {
+  margin-top: 43px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #d9d9e3;
+  border: rgb(198, 230, 42) dotted 1px;
+  padding: 8px;
+  font-weight: 100;
+  font-size: 8px;
+}
+
+.main-header-title {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.5;
+}
+
+h1#main-header-ehw {
+  padding-top: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.6px;
+}
+
+.h-4,
+.w-4 {
+  align-self: center;
+  height: 16px;
+  width: 16px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~ */
 /* SIDEBAR SECTION */
