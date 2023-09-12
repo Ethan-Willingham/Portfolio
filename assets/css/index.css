@@ -38,15 +38,13 @@
   height: 24px;
 }
 
-#hamburger {
+#hamburger svg {
   margin-top: 1px;
-  margin-left: 4px;
+  margin-left: 12px;
 }
 
 #hamburger:hover svg {
   stroke: #fff;
-  margin-top: 1px;
-  margin-left: 2px;
 }
 
 #hamburger:focus svg {
@@ -60,7 +58,7 @@ h1#mobile-header-new-chat {
   align-self: center;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   justify-self: center;
   padding-top: 2px;
@@ -114,15 +112,83 @@ h1#main-header-ehw {
 }
 
 .header-share-button {
+  position: relative;
   height: 40px;
-  width: 40px;
+  width: 35px;
+  margin-right: 11px;
+  margin-bottom: 6px;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.1s;
+  border-radius: 4px;
 }
 
-button.header-share-button {
-  margin-right: 8px;
+.header-share-button:hover {
+  background: rgba(255, 255, 255, 0.075);
+  border-radius: 4px;
+}
+
+.tooltip {
+  position: absolute;
+  letter-spacing: -0.6px;
+  left: -220%;
+  bottom: -10%;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 12px;
+  visibility: hidden;
+  transition: visibility ease 0.1s;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  left: 97%;
+  bottom: 50%;
+  border-left: 10px solid black;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transform: translateY(50%);
+}
+
+.header-share-button:hover .tooltip {
+  visibility: visible;
+  transition-delay: 0.2s;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~ */
+/* INITAIL SCREEN LOAD ELEMENTS */
+/* ~~~~~~~~~~~~~~~~~~ */
+
+.gpt-version-selector {
+}
+.version-button-3.5 {
+}
+.version-button-4 {
+}
+
+.chat-ehw-watermark {
+}
+.chat-ehw-watermark::after {
+}
+
+#ehw-watermark-inner-text::after {
+  content: "";
+  position: absolute;
+  left: 97%;
+  bottom: 50%;
+  border-left: 10px solid black;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transform: translateY(50%);
+}
 
 /* ~~~~~~~~~~~~~~~~~~ */
 /* SIDEBAR SECTION */

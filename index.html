@@ -73,6 +73,9 @@
           <h1 id="main-header-ehw">&nbsp;EHW-4</h1>
         </div>
         <button aria-label="Share chat" class="header-share-button">
+          <span class="tooltip"
+            ><p id="share-chat-tooltip-text">Share chat</p></span
+          >
           <svg
             stroke="currentColor"
             fill="none"
@@ -91,7 +94,13 @@
           </svg>
         </button>
       </header>
-      <div class="chat-EHW-watermark"><h2>Chat-EHW (plus)</h2></div>
+      <div class="gpt-version-selector">
+        <div class="version-button-3.5">GPT-3.5</div>
+        <div class="version-button-4">GPT-4</div>
+      </div>
+      <div class="chat-EHW-watermark">
+        <h2 id="ehw-watermark-inner-text">Chat-EHW (plus)</h2>
+      </div>
       <div class="main-display-footer">
         <article class="response-block">Response-block</article>
         <button class="main-section-nav-buttons">Button 1</button>
