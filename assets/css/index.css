@@ -78,7 +78,9 @@ h1#mobile-header-new-chat {
 
 .main-display-header {
   margin-top: 52px;
-  display: flex;
+  /* display: flex; */
+  /* DISABLED UNTIL REACTIVITY IS INCLUDED */
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -174,22 +176,80 @@ h1#mobile-header-new-chat {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~ */
-/* INITAIL SCREEN LOAD ELEMENTS */
+/* LANDING PAGE ELEMENT STYLING */
 /* ~~~~~~~~~~~~~~~~~~ */
 
-.gpt-version-selector {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
+.gpt-version-selector-box {
   font-size: 16px;
   font-weight: 700;
   height: 53px;
   color: #d9d9e3;
+  margin-top: 52px;
 }
+
+.gpt-version-selector-visible-area {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  height: 100%;
+  background-color: #202123;
+  border-radius: 12px;
+  margin: 0px 10px;
+}
+
+#version-text-3,
+#version-text-4 {
+  letter-spacing: -0.8px;
+  font-weight: 600;
+}
+
 .version-button-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #40414f;
+  border-radius: 10px;
+  flex: 1;
+  margin: 4px;
+  border: #5d5d67 solid 1px;
 }
 .version-button-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #40414f;
+  border-radius: 10px;
+  flex: 1;
+  margin: 4px;
+  border: #5d5d67 solid 1px;
+}
+
+.version-button-4 svg {
+  width: 20px;
+  height: 20px;
+  color: #ab68ff;
+}
+.version-button-3 svg {
+  width: 20px;
+  height: 20px;
+  color: #19c37d;
+}
+
+.arrow-down-version-selector {
+  stroke: #8e8ea0;
+  fill: none;
+  align-self: flex-start;
+  margin-top: 8px;
+  transform: scale(0.7);
+}
+
+.arrow-up-version-selector svg {
+  stroke: #8e8ea0;
+  fill: none;
+  align-self: flex-start;
+  margin-top: 3px;
+  transform: scale(0.7);
+  display: none;
 }
 
 .chat-ehw-watermark {
