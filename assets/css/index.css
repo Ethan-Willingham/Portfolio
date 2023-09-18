@@ -266,6 +266,7 @@ h1#mobile-header-new-chat {
   font-weight: 800;
   letter-spacing: -1.2px;
   display: flex;
+  border: #19c37d solid 1px;
 }
 
 #plus-watermark {
@@ -288,12 +289,29 @@ h1#mobile-header-new-chat {
 /* ~~~~~~~~~~~~~~~~~~ */
 /* MAIN-DISPLAY FOOTER */
 /* ~~~~~~~~~~~~~~~~~~ */
+
 #main-section-bottom {
   border: green solid 1px;
   flex: 1;
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.main-display-footer {
+  margin-top: auto;
+  border: #19c37d solid 1px;
+}
+
+.response-block {
+  align-self: center;
+  color: #cfd2d8;
+  margin: 10px;
+}
+
+.main-display-footer-disclamer {
+  color: #c5c5d2;
+  text-align: center;
 }
 
 /* ~~~~~~~~~~~~~~~~~~ */
