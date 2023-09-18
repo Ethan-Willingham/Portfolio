@@ -6,9 +6,7 @@
   display: flex;
   flex-direction: column;
   background-color: #343541;
-  height: 100%;
-  width: 100%;
-  display: relative;
+  height: 100vh;
 }
 
 /* ~~~~~~~~~~~~~~~~~~ */
@@ -56,8 +54,8 @@
 h1#mobile-header-new-chat {
   color: #d9d9e3;
   align-self: center;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1rem;
   font-weight: 600;
   text-align: center;
   justify-self: center;
@@ -255,6 +253,16 @@ h1#mobile-header-new-chat {
 .chat-ehw-watermark {
 }
 .chat-ehw-watermark::after {
+}
+
+/* ~~~~~~~~~~~~~~~~~~ */
+/* MAIN-DISPLAY FOOTER */
+/* ~~~~~~~~~~~~~~~~~~ */
+
+.main-display-foooter {
+  position: fixed;
+  bottom: 0;
+  font-size: 90%;
 }
 
 /* ~~~~~~~~~~~~~~~~~~ */
